@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: ghostwhite;
+    color:hotpink;
+}
+
+#formulario {
+    width: 300px;
+    margin: auto;
+    padding: 40px;
+    background-image: url('images/pink_sky.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    border-color: 1px solid #d7e1eb;
+    border-radius: 10px;
+    border: 2px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#formulario h1 {
+    font-size: x-large;
+    color: hotpink;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 3px hotpink;
+}
+
+#formulario button {
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #FFB6C1;
+    border: 1px solid hotpink;
+    color: hotpink;
+    border-radius: 3px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font: 600;
+    text-transform: uppercase;
+}
+
+#formulario button:hover {
+    box-shadow: 0px 1px 6px hotpink;
+    cursor: pointer;
+}
+
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 1px solid hotpink;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    margin-bottom: 8px;
+    width: 92%;
+}
+
+.input-control input:focus { 
+    outline: 1px solid deeppink;
+}
+
+.input-control.success input {
+    background-image: url('images/error-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 270px;
+    background-position-y: 8px;
+    border-color: crimson;
+
+}
+
+.input-control.error input {
+    background-image: url('images/success-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-x: 270px;
+    background-position-y: 8px;
+    border-color: lime;
+
+}
+
+.input-control .error {
+    color: crimson;
+    font-size: 9px;
+    height: 15px;
+}
